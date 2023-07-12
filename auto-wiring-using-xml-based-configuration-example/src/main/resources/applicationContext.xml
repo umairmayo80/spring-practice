@@ -20,4 +20,20 @@
     </bean>
 
 
+    <bean id="byTypeCustomer" class="Customer" autowire="byType">
+        <property name="name" value="John Doe" />
+    </bean>
+
+    <bean id="constructorCustomer" class="Customer" autowire="constructor">
+        <constructor-arg value="Jane Smith" />
+        <constructor-arg ref="address" />
+    </bean>
+
+<!--    <bean id="autoDetectCustomer" class="com.umair.spring.Customer" autowire="auto-detect">-->
+<!--        <property name="name" value="Mike Johnson" />-->
+<!--        <property name="address" ref="address" />-->
+<!--    </bean>-->
+
+
+
 </beans>
