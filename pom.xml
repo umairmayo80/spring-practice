@@ -13,6 +13,8 @@
         <module>simple-spring-app</module>
         <module>bean-inheritance-and-template-usage</module>
         <module>auto-wiring-using-xml-based-configuration-example</module>
+        <module>auto-wiring-using-annotations-java-based-configuration</module>
+        <module>spring-configuration-using-java-based-annotations</module>
     </modules>
 
 

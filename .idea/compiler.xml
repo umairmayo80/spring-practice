@@ -9,6 +9,8 @@
         <module name="bean-inheritance-and-template-usage" />
         <module name="auto-wiring-using-xml-based-configuration-example" />
         <module name="simple-spring-app" />
+        <module name="spring-configuration-using-java-based-annotations" />
+        <module name="auto-wiring-using-annotations-java-based-configuration" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
