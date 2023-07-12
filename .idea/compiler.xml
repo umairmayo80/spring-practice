@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bean-inheritance-and-template-usage" />
+        <module name="auto-wiring-using-xml-based-configuration-example" />
         <module name="simple-spring-app" />
       </profile>
     </annotationProcessing>
