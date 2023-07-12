@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="bean-inheritance-and-template-usage" />
         <module name="simple-spring-app" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Simple-spring-app" target="1.5" />
+      <module name="t1" target="1.5" />
+      <module name="test" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

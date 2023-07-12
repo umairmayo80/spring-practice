@@ -1,4 +1,4 @@
-package com.umair.spring;
+package com.umair.spring.javaConfig;
 
 public class MyBean {
     private String greeting;

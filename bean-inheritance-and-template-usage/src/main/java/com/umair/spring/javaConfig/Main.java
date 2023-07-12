@@ -1,19 +1,16 @@
-package com.umair.spring;
+package com.umair.spring.javaConfig;
 
+import com.umair.spring.ChildBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class App {
-
+public class Main {
     public static void main(String[] args){
         ApplicationContext applicationContext =
                 new AnnotationConfigApplicationContext(AppConfig.class);
 
-        MyBean myBean = applicationContext.getBean("myBean",MyBean.class);
-        myBean.sayHello();
-
-        MyBean myBean1 = applicationContext.getBean("myBeanNotCustomized",MyBean.class);
-        myBean1.sayHello();
+        ChildBean childBean= applicationContext.getBean(ChildBean.class);
+        System.out.println(childBean);
 
     }
 }

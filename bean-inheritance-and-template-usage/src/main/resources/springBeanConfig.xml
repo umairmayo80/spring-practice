@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean id="parentBean1" class="com.umair.spring.ParentBean" p:message='Hello spring'/>
+
+
+    <!--In this XML configuration, we define the parentBean bean with the base configuration and set the message property. Then, we define the childBean bean and set the count property. The parent attribute in the childBean definition indicates that it inherits the configuration from the parentBean.
+
+By using bean definition inheritance, the childBean inherits the properties and behaviors defined in the parentBean and adds or overrides them as needed. This promotes code reuse and provides a way to customize specific aspects of the child beans while keeping the common configuration in the parent bean. -->
+    <bean id="childClass1" class="com.umair.spring.ChildBean" p:count="12" parent="parentBean1"/>
+</beans>

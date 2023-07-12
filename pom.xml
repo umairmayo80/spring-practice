@@ -11,6 +11,7 @@
     <modules>
         <module>Simple-spring-app</module>
         <module>simple-spring-app</module>
+        <module>bean-inheritance-and-template-usage</module>
     </modules>
 
 
